@@ -11,7 +11,7 @@
     <title>Pops Store</title>
   </head>
   <body>
-    <nav>
+    <nav id="nav">
       <div class="navTop">
         <div class="navItem">
           <img
@@ -30,7 +30,15 @@
           </div>
         </div>
         <div class="navItem">
-          <span class="offreLimite">Offres limités !</span>
+          <div class="dropdown">
+            <button class="dropbtn">Menu
+            </button>
+            <div class="dropdown-content">
+            <a href="#product">Détails</a>
+            <a href="#newSeason">Nouvelle Collection</a>
+            <a href="#footer">Liens Utiles</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="navBottom">
@@ -112,46 +120,88 @@
         </div>
        
     </div>    
-  
+    <div class="newSeason" id="newSeason">
+      <div class="nsItem">
+        <img src="/img/logo/2034336-japon-design-symbolique-avec-grande-vague-et-fleurs-sakura-et-nuage-et-soleil-oriental-gratuit-vectoriel.jpg" alt="" class="nsImg">
+      </div>
+      <div class="nsItem">
+        
+        <h3 class="nsTitleSm">***Nouvelle_Collection***</h3>
+        <h1 class="nsTitle">*Nouvelle_Saison*</h1>
+        <h1 class="nsTitle">**Nouveaux_Design !**</h1>
+      </div>
+      <div class="nsItem">
+        <img src="/img/logo/pochoir_feuille_bambou.jpg" alt="" class="nsImg">
+      </div>
+    </div>     
     <div class="gallery">
       <div class="galleryItem">
-        <h1 class="galleryTitle">A propos de moi</h1>     
-        <img src="/img/graffiti.jpg" alt="about-me" class="galleryImg">     
-      </div>
-    <div class="galleryItem">
-        <h1 class="galleryTitle">Mon evolution</h1>     
-        <img src="/img/dessin-digital.jpg" alt="about-me" class="galleryImg">     
-      </div>
-    <div class="galleryItem">
-        <h1 class="galleryTitle">Mes futures projets</h1>     
-        <img src="/img/Gmail/IMG-20220918-WA0002.jpg" alt="about-me" class="galleryImg">     
-      </div>
-      <div class="features">
-        <div class="feature">
-          <img src="/img/icon/facebook.png" alt="facebook-logo" class="featureIcon">
-          <span class="featureTitle">Compte Facebook :</span>
-          <span class="featureDesc">https://www.facebook.com/profile.php?id=100089353308841</span>
+        <img src="/img/graffiti2.jpg" alt="about-me" class="galleryImg" width="500" height="700">
+        <div class="overlay">
+          <div class="overlayText">
+            <h1 class="galleryTitle">A propos de moi</h1>
+          </div>
         </div>
-        <div class="feature">
-          <img src="/img/icon/instagram.png" alt="instagram-logo" class="featureIcon">
-          <span class="featureTitle">Compte Instagram :</span>
-          <span class="featureDesc">https://www.instagram.com/sneakerscustom_popsone?igshid=ZDdkNTZiNTM=</span>
-        </div>
-        <div class="feature">
-          <img src="/img/icon/tic-tac.png" alt="tiktok-logo" class="featureIcon">
-          <span class="featureTitle">Compte Tiktok :</span>
-          <span class="featureDesc">https://www.tiktok.com/@popopopss7?_t=8ZA15dG5FCf&_r=1</span>
-        </div>
-        <div class="feature">
-          <img src="/img/icon/snapchat.png" alt="snapchat-logo" class="featureIcon">
-          <span class="featureTitle">Compte Snapchat :</span>
-          <span class="featureDesc">https://www.snapchat.com/add/popsone_custom?share_id=tL4HXOdfYv4&locate=fr-FR</span>
-        </div>
-        <div class="feature">
-          <img src="/img/icon/e-mail.png" alt="email-logo" class="featureIcon">
-          <span class="featureTitle">Adresse e-mail :</span>
-          <span class="featureDesc">Sneakerscustompopsone@gmail.com</span>
       </div>
+      <div class="galleryItem">     
+        <img src="/img/dessin-digital2.jpg" alt="about-me" class="galleryImgBis">
+        <div class="overlay">
+          <div class="overlayText">
+            <h1 class="galleryTitle">Mon evolution</h1>
+          </div>
+        </div>
+      </div>
+      <div class="galleryItem">     
+        <img src="/img/photo-montage-shoes-2.png" alt="about-me" class="galleryImg">
+        <div class="overlay">
+          <div class="overlayText">
+            <h1 class="galleryTitle">Mes futures projets</h1>
+          </div>
+        </div>     
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="footerLeft">
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">A propos de nous</h1>
+          <ul class="fMenuList">
+            <li class="fListItem">Sur moi</li>
+            <li class="fListItem">Matétiels</li>
+            <li class="fListItem">Projets</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Liens utiles</h1>
+          <div class="features">
+            <div class="feature">
+              <img src="/img/icon/facebook.png" alt="facebook-logo" class="featureIcon">
+              <span class="featureTitle">Compte Facebook :</span>
+              <span class="featureDesc">https://www.facebook.com/profile.php?id=100089353308841</span>
+            </div>
+            <div class="feature">
+              <img src="/img/icon/instagram.png" alt="instagram-logo" class="featureIcon">
+              <span class="featureTitle">Compte Instagram :</span>
+              <span class="featureDesc">https://www.instagram.com/sneakerscustom_popsone?igshid=ZDdkNTZiNTM=</span>
+            </div>
+            <div class="feature">
+              <img src="/img/icon/tic-tac.png" alt="tiktok-logo" class="featureIcon">
+              <span class="featureTitle">Compte Tiktok :</span>
+              <span class="featureDesc">https://www.tiktok.com/@popopopss7?_t=8ZA15dG5FCf&_r=1</span>
+            </div>
+            <div class="feature">
+              <img src="/img/icon/snapchat.png" alt="snapchat-logo" class="featureIcon">
+              <span class="featureTitle">Compte Snapchat :</span>
+              <span class="featureDesc">https://www.snapchat.com/add/popsone_custom?share_id=tL4HXOdfYv4&locate=fr-FR</span>
+            </div>
+            <div class="feature">
+              <img src="/img/icon/e-mail.png" alt="email-logo" class="featureIcon">
+              <span class="featureTitle">Adresse e-mail :</span>
+              <span class="featureDesc">Sneakerscustompopsone@gmail.com</span>
+          </div>
+    </div>
+        </div>
+      </div>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>

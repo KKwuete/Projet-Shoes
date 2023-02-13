@@ -1,4 +1,4 @@
-const wrapper = document.querySelector(".sliderWrapper");
+/**const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
 
 const products = [
@@ -70,4 +70,14 @@ productButton.addEventListener("click", () => {
 
 close.addEventListener("click", () => {
   payment.style.display = "none";
+});**/
+
+$(document).ready(function () {
+  $(".carouselWrapper").slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: "linear",
+  });
 });

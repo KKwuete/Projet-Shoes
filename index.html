@@ -5,77 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pops Store</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo/Logo-favicon-16x16.png">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav id="nav">
-      <div class="navTop">
-        <div class="navItem">
-          <img
-            src="/img/logo/Logo PopsOne - FondBlanc - 50x50.svg"
-            alt="white-logo"
-          />
-        </div>
-        <div class="navItem">
-          <div class="search">
-            <input type="text" placeholder="Search..." class="searchInput" />
-            <img
-              src="/img/icons8-chercher-24.png"
-              alt="search-icon"
-              class="searchIcon"
-            />
-          </div>
-        </div>
-        <!--<div class="navItem">
-          menu en haut a droite
-        </div>-->
-      </div>
-      <div class="navBottom">
-        <h3 class="menuItem">Home</h3>
-        <a href="/Nouveautes.html">
-          <h3 class="menuItem">New Sneakers !</h3>
-        </a>
-        <h3 class="menuItem">
-          <div class="dropdown">
-            <button class="dropbtn">Collection
-            </button>
-            <div class="dropdown-content">
-            <a href="#">Manga</a>
-            <a href="#">Enfant</a>
-            <a href="#">Couleurs</a>
-            <a href="#">Vestes</a>
-            <a href="#">Accessoires</a>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/img/logo/Logo-favicon-16x16.png">Pops</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-md-8">Nouveautés ! -10% pour toutes nouvelles inscriptions!</div>
+              <div class="col-6 col-md-4">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-          </div>
-        </h3>
-        <h3 class="menuItem">Customisation</h3>
-        <h3 class="menuItem">Mon Travail</h3>
-        <h3 class="menuItem">Contact</h3>
+        </div>
       </div>
     </nav>
-    <div class="carousel">
-      
-      <div class="carouselWrapper">
-        
-        <div class="carouselItem">
-          <img src="/img/Air kikko-montageCanva.png" alt="" class="carouselImg">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div id="navBottom" class="container-fluid">
+        <a class="navbar-brand" href="/img/logo/Logo-favicon-16x16.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" aria-current="page">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Nouveautes.html">Nouveautés</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Personnalisation</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Collection
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mangas</a></li>
+                  <li><a class="dropdown-item" href="#">Enfants</a></li>
+                  <li><a class="dropdown-item" href="#">Luxe</a></li>
+                  <li><a class="dropdown-item" href="#">Vestes</a></li>
+                  <li><a class="dropdown-item" href="#">Sneakers Customs</a></li>
+                  <li><a class="dropdown-item" href="#">Accusoires</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mes Oeuvres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+    </nav>
+    <div id="carouselExampleAutoplaying" class="carousel slide pt-5 " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/Air kikko-montageCanva.png" class="d-block w-100" alt="">
         </div>
-        <div class="carouselItem">
-          <img src="/img/bleach-montageCanva.png" alt="" class="carouselImg">
+        <div class="carousel-item">
+          <img src="/img/bleach-montageCanva.png" class="d-block w-100" alt="">
         </div>
-        <div class="carouselItem">
-          <img src="/img/Seigahara-montageCanva.png" alt="" class="carouselImg">
+        <div class="carousel-item">
+          <img src="/img/Seigahara-montageCanva.png" class="d-block w-100" alt="">
         </div>
-        
       </div>
-      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <!--Slider-->
     <!--<div class="slider">
@@ -233,10 +251,7 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="/slick/slick.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
   </body>
 </html>

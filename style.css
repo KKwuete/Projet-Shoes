@@ -443,3 +443,18 @@ label {
   margin-bottom: 100px;
   border: 1px solid #008cba;
 }
+
+.customTitle {
+  text-align: center;
+  margin-top: 70px;
+  font-style: italic;
+}
+
+#customBg {
+  background-color: red;
+  margin-top: 100px;
+}
+
+#customImg {
+  margin: 40px;
+}

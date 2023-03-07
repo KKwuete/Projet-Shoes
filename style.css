@@ -437,3 +437,9 @@ label {
   cursor: pointer;
   height: 100px;
 }
+
+#imgNews {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 1px solid #008cba;
+}

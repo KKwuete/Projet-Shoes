@@ -1,0 +1,258 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pops Store</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo/Logo-favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="{% static 'main_app\style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">Pops</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-md-8">Nouveautés ! -10% pour toutes nouvelles inscriptions!</div>
+              <div class="col-6 col-md-4">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div id="navBottom" class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'main_app\img\logo\Logo PopsOne - AJ1-FondBlanc-2.0-colors.svg' %}" alt="Acceuil" width="125" height="125">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" aria-current="page">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Nouveautes.html">Nouveautés</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Personnalisation.html">Personnalisation</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Collection
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mangas</a></li>
+                  <li><a class="dropdown-item" href="#">Enfants</a></li>
+                  <li><a class="dropdown-item" href="#">Luxe</a></li>
+                  <li><a class="dropdown-item" href="#">Vestes</a></li>
+                  <li><a class="dropdown-item" href="#">Sneakers Customs</a></li>
+                  <li><a class="dropdown-item" href="#">Accusoires</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mes Oeuvres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+    </nav>
+    <div id="carouselExampleAutoplaying" class="carousel slide pt-5 " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'main_app\img\Air kikko-montageCanva.png' %}" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'main_app\img\bleach-montageCanva.png' %}" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'main_app\img\Seigahara-montageCanva.png' %}" class="d-block w-100" alt="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--Slider-->
+    <!--<div class="slider">
+      <div class="sliderWrapper">
+        <div class="sliderItem">
+          <img src="/img/Seigaiha-detourB.jpg" alt="Shoes-1" class="sliderImg" />
+          <div class="sliderBg">
+            <h1 class="sliderTitle">AIR JORDAN</br>GOLDEN</br>SEIGAIHA</h1>
+            <h2 class="sliderPrice">250€</h2>
+            <a href="#product">
+              <button class="buyButton">Détails</button>
+            </a>
+          </div>
+          </div>
+        <div class="sliderItem">
+          <img src="/img/Kikko-detourB.jpg" alt="Shoes-2" class="sliderImg" />
+          <div class="sliderBg">
+            <h1 class="sliderTitle">AIR FORCE 1</br>KIKKO</br>2 ton</h1>
+            <h2 class="sliderPrice">250€</h2>
+            <a href="#product">
+              <button class="buyButton">Détails</button>
+            </a>
+          </div>
+          </div>
+        <div class="sliderItem">
+          <img src="/img/LegacyBleachpetit.png" alt="Shoes-3" class="sliderImg" />
+            <div class="sliderBg">
+              <h1 class="sliderTitle">AIR LEGACY</br>BLEACH</br>I&U</h1>
+              <h2 class="sliderPrice">250€</h2>
+              <a href="#product">
+                <button class="buyButton">Détails</button>
+              </a>
+          </div>
+          </div>
+      </div>
+    </div>-->
+    </div>
+    <div class="product" id="product">
+        <img src="{% static 'main_app\img\Seigaiha-detourB.jpg' %}" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">AIR FORCE 1</h1>
+            <h2 class="productPrice">250 €</h2>
+            <p class="productDesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem officiis alias aspernatur tempora perspiciatis soluta optio minima! Aliquam quasi exercitationem, eveniet voluptatem fugiat fuga quisquam facere amet aliquid iste?</p>
+      
+          <div class="sizes">
+            <div class="size">40</div>
+            <div class="size">41</div>
+          </div>
+        <button class="productButton">Achète Maintenant !</button>
+      </div>
+        <div class="payment">
+          <h1 class="payTitle">Informations Personnels</h1>
+          <label>Nom et Prénom</label>
+          <input type="text" placeholder="Monsieur X" class="payInput">
+          <label>Numéro de téléphone</label>
+          <input type="text" placeholder="01 23 45 67 89" class="payInput">
+          <label>Adresse</label>
+          <input type="text" placeholder="12 rue du Coq" class="payInput">
+          <h1 class="payTitle">Carte Information</h1>
+          <div class="cardIcons">
+            <img src="{% static 'main_app\img\icon\visa.png' %}" alt="visa-icon" width="40" class="cardIcon">
+            <img src="{% static  'main_app\img\icon\mc_symbol_opt_63_3x.png' %}" alt="mastercard-icon" width="40" class="cardIcon">
+          </div>
+          <input type="text" class="payInput" placeholder="Numéro de votre carte">
+          <div class="cardInfo">
+            <input type="text" class="payInput sm" placeholder="Mois">
+            <input type="text" class="payInput sm" placeholder="Année">
+            <input type="text" class="payInput sm" placeholder="CVV">
+            <img src="{% static 'main_app\img\icon\cvv.png' %}" width="40" height="40" alt="cvv-icon" class="cardInfoIcon">
+          </div>
+          <button class="payButton">Validez !</button>
+          <span class="close">X</span>
+        </div>
+       
+    </div>    
+    <div class="newSeason" id="newSeason">
+      <div class="nsItem">
+        <img src="{% static 'main_app\img\logo\2034336-japon-design-symbolique-avec-grande-vague-et-fleurs-sakura-et-nuage-et-soleil-oriental-gratuit-vectoriel.jpg' %}" alt="" class="nsImg">
+      </div>
+      <div class="nsItem">
+        
+        <h3 class="nsTitleSm">***Nouvelle_Collection***</h3>
+        <h1 class="nsTitle">*Nouvelle_Saison*</h1>
+        <h1 class="nsTitle">**Nouveaux_Design !**</h1>
+      </div>
+      <div class="nsItem">
+        <img src="{% static 'main_app\img\logo\pochoir_feuille_bambou.jpg' %}" alt="" class="nsImg">
+      </div>
+    </div>     
+    <div class="gallery">
+      <div class="galleryItem">
+        <img src="{% static 'main_app\img\graffiti2.jpg' %}" alt="about-me" class="galleryImg" width="500" height="700">
+        <div class="overlay">
+          <div class="overlayText">
+            <h1 class="galleryTitle">A propos de moi</h1>
+          </div>
+        </div>
+      </div>
+      <div class="galleryItem">     
+        <img src="{% static 'main_app\img\dessin-digital2.jpg' %}" alt="about-me" class="galleryImgBis">
+        <div class="overlay">
+          <div class="overlayText">
+            <h1 class="galleryTitle">Mon evolution</h1>
+          </div>
+        </div>
+      </div>
+      <div class="galleryItem">     
+        <img src="{% static 'main_app\img\photo-montage-shoes-2.png' %}" alt="about-me" class="galleryImg">
+        <div class="overlay">
+          <div class="overlayText">
+            <a href="#" class="galleryTitle">Mes futures projets</a>
+          </div>
+        </div>     
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="footerLeft">
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">A propos de nous</h1>
+          <ul class="fMenuList">
+            <li class="fListItem">Sur moi</li>
+            <li class="fListItem">Matétiels</li>
+            <li class="fListItem">Projets</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Liens utiles</h1>
+          <div class="features">
+            <div class="feature">
+              <img src="{% static 'main_app\img\icon\facebook.png' %}" alt="facebook-logo" class="featureIcon">
+              <span class="featureTitle">Compte Facebook :</span>
+              <span class="featureDesc">https://www.facebook.com/profile.php?id=100089353308841</span>
+            </div>
+            <div class="feature">
+              <img src="{% static 'main_app\img\icon\instagram.png' %}" alt="instagram-logo" class="featureIcon">
+              <span class="featureTitle">Compte Instagram :</span>
+              <span class="featureDesc">https://www.instagram.com/sneakerscustom_popsone?igshid=ZDdkNTZiNTM=</span>
+            </div>
+            <div class="feature">
+              <img src="{% static 'main_app\img\icon\tic-tac.png' %}" alt="tiktok-logo" class="featureIcon">
+              <span class="featureTitle">Compte Tiktok :</span>
+              <span class="featureDesc">https://www.tiktok.com/@popopopss7?_t=8ZA15dG5FCf&_r=1</span>
+            </div>
+            <div class="feature">
+              <img src="{% static 'main_app\img\icon\snapchat.png' %}" alt="snapchat-logo" class="featureIcon">
+              <span class="featureTitle">Compte Snapchat :</span>
+              <span class="featureDesc">https://www.snapchat.com/add/popsone_custom?share_id=tL4HXOdfYv4&locate=fr-FR</span>
+            </div>
+            <div class="feature">
+              <img src="{% static 'main_app\img\icon\e-mail.png' %}" alt="email-logo" class="featureIcon">
+              <span class="featureTitle">Adresse e-mail :</span>
+              <span class="featureDesc">Sneakerscustompopsone@gmail.com</span>
+          </div>
+    </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

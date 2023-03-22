@@ -6,6 +6,10 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.col-10 {
+  color: white;
+}
+
 /*div.navbar {
   text-align: center;
   justify-content: center;

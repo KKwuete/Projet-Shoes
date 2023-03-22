@@ -1,0 +1,149 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pops Store</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo/Logo-favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="{% static 'main_app\style.css' %}">
+    <link href="{% static 'bootstrap\bootstrap.min.css' %}" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">Pops</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-md-8">Nouveautés ! -10% pour toutes nouvelles inscriptions!</div>
+              <div class="col-6 col-md-4">
+                <form class="d-flex" role="search">
+                    <a class="btn btn-primary" href="{% url 'signup' %}" role="button">Inscription</a>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div id="navBottom" class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="{% static 'main_app\img\logo\Logo PopsOne - AJ1-FondBlanc-2.0-colors.svg' %}" alt="Acceuil" width="125" height="125">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" aria-current="page">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'new' %}">Nouveautés</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'customize' %}">Personnalisation</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Collection
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mangas</a></li>
+                  <li><a class="dropdown-item" href="#">Enfants</a></li>
+                  <li><a class="dropdown-item" href="#">Luxe</a></li>
+                  <li><a class="dropdown-item" href="#">Vestes</a></li>
+                  <li><a class="dropdown-item" href="#">Sneakers Customs</a></li>
+                  <li><a class="dropdown-item" href="#">Accusoires</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mes Oeuvres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+    </nav>
+    <div class="container-fluid">
+        <div class="container-fluid" id="customHead">
+            <h3 class="text-center">Personnalisation</h3>
+            <h1 class="text-center">Créez votre paire de Sneakers sur-mesure</h1>
+            <!--<img src="{% static 'main_app\img\logo\black-lines-clipart-transparent-.jpg' %}" alt="" class="img-fluid">-->
+        </div>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <img src="{% static 'main_app\img\Air kikko-montageCanva.png' %}" class="figure-img img-fluid rounded" alt="" width="350" height="350">
+                <img src="{% static 'main_app\img\logo\Logo PopsOne - AJ1-FondBlanc-2.0-colors.svg' %}" class="figure-caption" alt="Acceuil" width="125" height="125">
+              </div>
+              <div class="col">
+                <h1 class="display-5"> Choisissez le modèle et votre idée </h1>
+                <p class="text-end">Toute nos paires sont authentiques,  achetés dans les boutiques officielles. Vous avez juste à laisser parler votre imagination. </p>
+                <br>
+                <h1 class="display-5"> Envoyez-nous votre projet personnalisé </h1>
+                <p class="text-end">En cliquant sur le bouton ci-dessous, vous allez remplir un formulaire en nous communiquant votre projet en quelques lignes. Si vous possédez des photos ou d’autres éléments servant à finaliser votre projet serait un plus ! </p>
+                <br>
+                <h1 class="display-5"> Consulter notre proposition </h1>
+                <p class="text-end">Nous ferions de notre mieux pour vous répondre dans délai les plus réduit possible, et nous pourrions établir un devis pour votre projet. </p>
+                <br>
+                <h1 class="display-5"> Livré chez vous ou en point Relais </h1>
+                <p class="text-end">Une fois votre projet fini, nous vous lexpédierons où que vous le voulez !</p>
+
+              </div>
+            </div>
+    </div>
+    <footer id="footer">
+      <div class="footerLeft">
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">A propos de nous</h1>
+          <ul class="fMenuList">
+            <li class="fListItem">Sur moi</li>
+            <li class="fListItem">Matétiels</li>
+            <li class="fListItem">Projets</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Liens utiles</h1>
+          <div class="features">
+            <div class="feature">
+              <img src="{% static 'main_app\img\icon\facebook.png' %}" alt="facebook-logo" class="featureIcon">
+              <span class="featureTitle">Compte Facebook :</span>
+              <span class="featureDesc">https://www.facebook.com/profile.php?id=100089353308841</span>
+            </div>
+            <div class="feature">
+              <img src="{% static 'main_app\img\icon\instagram.png' %}" alt="instagram-logo" class="featureIcon">
+              <span class="featureTitle">Compte Instagram :</span>
+              <span class="featureDesc">https://www.instagram.com/sneakerscustom_popsone?igshid=ZDdkNTZiNTM=</span>
+            </div>
+            <div class="feature">
+              <img src="{% static 'main_app\img\icon\tic-tac.png' %}" alt="tiktok-logo" class="featureIcon">
+              <span class="featureTitle">Compte Tiktok :</span>
+              <span class="featureDesc">https://www.tiktok.com/@popopopss7?_t=8ZA15dG5FCf&_r=1</span>
+            </div>
+            <div class="feature">
+              <img src="{% static 'main_app\img\icon\snapchat.png' %}" alt="snapchat-logo" class="featureIcon">
+              <span class="featureTitle">Compte Snapchat :</span>
+              <span class="featureDesc">https://www.snapchat.com/add/popsone_custom?share_id=tL4HXOdfYv4&locate=fr-FR</span>
+            </div>
+            <div class="feature">
+              <img src="{% static 'main_app\img\icon\e-mail.png' %}" alt="email-logo" class="featureIcon">
+              <span class="featureTitle">Adresse e-mail :</span>
+              <span class="featureDesc">Sneakerscustompopsone@gmail.com</span>
+          </div>
+    </div>
+        </div>
+      </div>
+    </footer>
+    <script src="{% static 'bootstrap\bootstrap.bundle.js' %}"></script>
+  </body>
+</html>

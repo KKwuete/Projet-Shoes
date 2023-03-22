@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
+from .forms import signupForm
 from django.contrib.auth import login
 from django.contrib import messages
 from django.http import HttpResponse
@@ -10,17 +10,29 @@ from django.template import loader
 
 def signup(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = signupForm(request.POST)
         if form.is_valid():
             user = form.save()
             login(request, user)
             return redirect('index')
     else:
-        form = UserCreationForm()
+        form = signupForm()
     return render(request, 'signup.html', {'form': form})
 
 
 def index(request):
     if request.method == 'GET':
         template = loader.get_template('index.html')
+        return HttpResponse(template.render())
+
+
+def nouveautes(request):
+    if request.method == 'GET':
+        template = loader.get_template('nouveautés.html')
+        return HttpResponse(template.render())
+
+
+def customize(request):
+    if request.method == 'GET':
+        template = loader.get_template('customize.html')
         return HttpResponse(template.render())

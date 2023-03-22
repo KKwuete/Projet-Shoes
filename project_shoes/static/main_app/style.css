@@ -6,7 +6,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-div.navbar {
+/*div.navbar {
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -33,74 +33,9 @@ li.nav-item {
   cursor: pointer;
 }
 
-.carouselImg {
-  width: 60%;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider {
-  /*background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");*/
-  opacity: 95%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
-  overflow: hidden;
-  background-color: black;
-}
-
-.sliderWrapper {
-  display: flex;
-  width: 300vw;
-  transition: all 1.5s ease-in-out;
-}
-
-.sliderItem {
-  width: 300vw;
-  height: 900px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.sliderBg {
-  width: 700px;
-  height: 700px;
-  border-radius: 50%;
-  position: absolute;
-
-  background-color: #fcfc62;
-  border: 2px solid black;
-}
-
-.sliderTitle {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  font-size: 45px;
-  font-weight: 900;
-  text-align: center;
-  color: rgb(10, 10, 10);
-  z-index: 1;
-}
-
-.sliderPrice {
-  position: absolute;
-  bottom: 5%;
-  left: 0%;
-  font-size: 45px;
-  font-weight: 400;
-  text-align: center;
-  color: white;
-  z-index: 1;
-}
-
-.sliderImg {
-  margin-top: 15px;
-  z-index: 1;
-  border: white 2px;
-  border-style: solid;
-  border-radius: 5px;
+.carousel {
+  width: 500;
+  height: 500;
 }
 
 .buyButton {
@@ -411,7 +346,7 @@ label {
       75% 100%,
       50% 75%,
       0% 75%
-    );*/
+    );
 }
 
 .feature {
@@ -458,3 +393,8 @@ label {
 #customImg {
   margin: 40px;
 }
+
+#customHead {
+  padding: 25px;
+}
+*/

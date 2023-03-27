@@ -34,7 +34,7 @@
     <nav class="navbar navbar-expand-lg sticky-top text-bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'index' %}">
-          <img src="{% static 'main_app\img\logo\Logo PopsOne - AJ1-FondBlanc-2.0-colors.svg' %}" alt="Bootstrap" width="125" height="125">
+          <img src="{% static 'main_app\img\logo\Logo PopsOne - AJ1-FondBlanc-2.0-colors.svg' %}" alt="" width="125" height="125">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" aria-current="page">
           <span class="navbar-toggler-icon"></span>
@@ -53,12 +53,11 @@
                     Collection
                   </button>
                   <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Mangas</a></li>
-                      <li><a class="dropdown-item" href="#">Enfants</a></li>
-                      <li><a class="dropdown-item" href="#">Luxe</a></li>
-                      <li><a class="dropdown-item" href="#">Vestes</a></li>
-                      <li><a class="dropdown-item" href="#">Sneakers Customs</a></li>
-                      <li><a class="dropdown-item" href="#">Accesoires</a></li>
+                    <li><a class="dropdown-item" href="{% url 'manga' %}">Mangas</a></li>
+                    <li><a class="dropdown-item" href="{% url 'kid' %}">Enfants</a></li>
+                    <li><a class="dropdown-item" href="{% url 'luxe' %}">Luxe</a></li>
+                    <li><a class="dropdown-item" href="{% url 'clothes' %}">Vetements</a></li>
+                    <li><a class="dropdown-item" href="{% url 'accessories' %}">Accesoires</a></li>
                   </ul>
                 </div>
                 <div class="col-sm">

@@ -1,0 +1,15 @@
+{% extends 'registration/registration_form.html' %} {% block form %}
+<form method="post" class="form-signin">
+  {% csrf_token %} {{ form.username.label_tag(attrs={'class': 'form-label'}) }}
+  {{ form.username(attrs={'class': 'form-control'}) }} {{
+  form.email.label_tag(attrs={'class': 'form-label'}) }} {{
+  form.email(attrs={'class': 'form-control'}) }} {{
+  form.password1.label_tag(attrs={'class': 'form-label'}) }} {{
+  form.password1(attrs={'class': 'form-control'}) }} {{
+  form.password2.label_tag(attrs={'class': 'form-label'}) }} {{
+  form.password2(attrs={'class': 'form-control'}) }}
+  <button type="submit" class="btn btn-lg btn-primary btn-block">
+    Sign up
+  </button>
+</form>
+{% endblock %}

@@ -23,4 +23,9 @@ urlpatterns = [
     path('', include('main_app.urls')),
     path('signup/', views.signup, name='signup'),
     path('index/', views.index, name='index'),
+    path('manga/', views.manga, name='manga'),
+    path('kid/', views.kid, name='kid'),
+    path('luxe/', views.luxe, name='luxe'),
+    path('clothes/', views.clothes, name='clothes'),
+    path('accessories/', views.accessories, name='accessories'),
 ]

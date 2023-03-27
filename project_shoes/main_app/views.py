@@ -36,3 +36,33 @@ def customize(request):
     if request.method == 'GET':
         template = loader.get_template('customize.html')
         return HttpResponse(template.render())
+
+
+def manga(request):
+    if request.method == 'GET':
+        template = loader.get_template('manga.html')
+        return HttpResponse(template.render())
+
+
+def kid(request):
+    if request.method == 'GET':
+        template = loader.get_template('kid.html')
+        return HttpResponse(template.render())
+
+
+def luxe(request):
+    if request.method == 'GET':
+        template = loader.get_template('luxe.html')
+        return HttpResponse(template.render())
+
+
+def clothes(request):
+    if request.method == 'GET':
+        template = loader.get_template('clothes.html')
+        return HttpResponse(template.render())
+
+
+def accessories(request):
+    if request.method == 'GET':
+        template = loader.get_template('accessories.html')
+        return HttpResponse(template.render())

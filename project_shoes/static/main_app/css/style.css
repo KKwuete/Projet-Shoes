@@ -2,9 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 
-#my-text {
-  color: black;
-  font-size: 26px;
-  width: 400px;
-  height: 250px;
+#desc-text {
+  position: absolute;
+  top: 30px;
+  left: 0;
 }

@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#my-text {
+  color: black;
+  font-size: 26px;
+  width: 400px;
+  height: 250px;
+}

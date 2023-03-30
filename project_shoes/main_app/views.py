@@ -66,3 +66,9 @@ def accessories(request):
     if request.method == 'GET':
         template = loader.get_template('accessories.html')
         return HttpResponse(template.render())
+
+
+def aboutme(request):
+    if request.method == 'GET':
+        template = loader.get_template('aboutme.html')
+        return HttpResponse(template.render())

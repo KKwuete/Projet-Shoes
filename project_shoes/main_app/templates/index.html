@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pops Store</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'main_app\img\logo\Logo-favicon-16x16.png' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'main_app\img\logo\Logo PopsOne - AJ1-FondBlanc-2.0-colors.svg' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'main_app\css\style.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link
@@ -23,8 +23,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <div class="container text-center">
               <div class="row">
-                <div class="col-10" id="msgNav">Nouveautés ! -10% pour toutes nouvelles inscriptions!</div>
-                <div class="col-2 align-self-end">
+                <div class="col-2 align-self-start">
                   <a class="btn btn-primary" href="{% url 'signup' %}" role="button">Inscription</a>
                 </div>
               </div>
@@ -64,7 +63,7 @@
                   <a class="nav-link" href="{% url 'customize' %}">Personnalisation</a>
                 </div>
                 <div class="col-sm">
-                  <a class="nav-link" href="#">Mes Oeuvres</a>
+                  <a class="nav-link" href="{% url 'aboutme' %}">Mes Oeuvres</a>
                 </div>
                 <div class="col-sm">
                   <a class="nav-link" href="#">Contacts</a>
@@ -73,7 +72,7 @@
           </div>
         </div>
     </nav>
-    <div id="carouselExampleAutoplaying" class="carousel slide mb-5" data-bs-ride="carousel">
+    <!--<div id="carouselExampleAutoplaying" class="carousel slide mb-5" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="{% static 'main_app\img\Air kikko-montageCanva.png' %}" class="d-block w-100" alt="">
@@ -94,6 +93,9 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    </div>-->
+    <div class="container-fluid">
+      <img src="{% static 'main_app\img\logo\Compo1.jpg' %}" class="img-fluid mb-5" alt="Acceuil">
     </div>
     <div class="container text-center mt-5">
       <div class="row align-items-center">
@@ -104,12 +106,11 @@
           <img src="{% static 'main_app\img\Seigaiha-detourB.jpg' %}" alt="" class="img-fluid mb-3">
           <div class="container-fluid">
             <h1 class="text-center">AIR FORCE 1</h1>
-            <button type="button" class="btn btn-warning" onmouseout="mOut()" onmouseover="mOver()" >Description</button>
           </div>
         </div>
         <div class="col-5">
-          <div class="container-fluid" id="container-text">
-            <p class="fst-italic" id='desc-text' style="display:none; background-color: #f0f0f0; padding: 10px;">Dessiné main avec pochoir Seigaiha_1, modèle: AIR FORCE 1</p>
+          <div class="container-fluid">
+            <p class="fw-bold">Dessiné à la main à l'aide du pochoir Seigaiha_1. Modèle AIR FORCE 1.</p>
           </div>
         </div>
         <div class="col">
@@ -290,6 +291,7 @@
       </div>
       <!-- Copyright -->
     </footer>
+    <a href="#" class="cd-top text-replace js-cd-top">Top</a>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     <script src="{% static 'main_app\js\app.js' %}"></script>

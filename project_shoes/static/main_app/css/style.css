@@ -2,8 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
-#desc-text {
-  position: absolute;
-  top: 30px;
-  left: 0;
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0.5;
 }

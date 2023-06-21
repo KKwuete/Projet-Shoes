@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import signupForm
 from django.contrib.auth import login
-from django.contrib import messages
+from django.contrib.auth.forms import AuthenticationForm
 from django.http import HttpResponse
 from django.template import loader
 
@@ -18,6 +18,24 @@ def signup(request):
     else:
         form = signupForm()
     return render(request, 'signup.html', {'form': form})
+
+
+def user_login(request):
+    if request.method == 'POST':
+        form = AuthenticationForm(data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            return redirect('index')
+    else:
+        form = AuthenticationForm()
+    return render(request, 'login.html', {'form': form})
+
+
+def base(request):
+    if request.method == 'GET':
+        template = loader.get_template('base.html')
+        return HttpResponse(template.render())
 
 
 def index(request):
